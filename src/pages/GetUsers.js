@@ -38,8 +38,8 @@ const GetUsers = () => {
           </div>
         </div>
         {data?.map(user => (
-          <Link to={`/${user?.user_id}`}>
-            <div key={user?.user_id} className="flex w-full">
+          <Link to={`/${user?.user_id}`} key={user?.user_id}>
+            <div className="flex w-full">
               <div className="w-1/2 py-4 border bg-slate-50 text-slate-700 text-center">
                 {user?.firstname}
               </div>
